@@ -1,6 +1,11 @@
 <template>
   <div id="main-menu">
-    <h1>SNAKE</h1>
+    <h1 class="text-h1 secondary--text">SNAKE</h1>
+    <div class="menu__buttons">
+      <v-btn color="primary">START</v-btn>
+      <v-btn color="primary">OPTIONS</v-btn>
+      <v-btn color="primary">HIGH SCORES</v-btn>
+    </div>
   </div>
 </template>
 
@@ -8,4 +13,26 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+#main-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+
+  h1 {
+    margin: 64px 0;
+    color: var(--v-primary-base);
+  }
+
+  .menu__buttons {
+    margin: 48px auto;
+    min-width: 30%;
+
+    button {
+      margin-bottom: 24px;
+      width: 100%;
+    }
+  }
+}
+</style>
