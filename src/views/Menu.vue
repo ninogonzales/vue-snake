@@ -2,9 +2,9 @@
   <div id="main-menu">
     <h1 class="text-h1 secondary--text">SNAKE</h1>
     <div class="menu__buttons">
-      <v-btn color="primary">START</v-btn>
-      <v-btn color="primary">OPTIONS</v-btn>
-      <v-btn color="primary">HIGH SCORES</v-btn>
+      <v-btn to="/game" color="primary">START</v-btn>
+      <v-btn to="/options" color="primary">OPTIONS</v-btn>
+      <v-btn to="/highscores" color="primary">HIGH SCORES</v-btn>
     </div>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {};
     margin: 48px auto;
     min-width: 30%;
 
-    button {
+    .v-btn {
       margin-bottom: 24px;
       width: 100%;
     }
